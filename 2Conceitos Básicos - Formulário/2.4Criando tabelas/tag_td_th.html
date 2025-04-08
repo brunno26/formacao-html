@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+    <style>
+        table tr:nth-child(even){
+            background-color: burlywood;
+        }
+        table tr:hover td{
+            background-color: darkgrey;
+        }
+    </style>
+</head>
+<body>
+    <table summary="Tabela referente a turma A da DIO" border="1" width="250" align="center" cellspacing="5" cellpadding="5">
+
+        <tr>
+            <!-- Como via de regra para não ter um cabeçalho muito grande, dentro da tag th coloca-se o atributo title e ainformação desejada e o nome da célula como no exemplo -->
+            <th title="Nome Completo">Nome</th>
+            <th>Idade</th>
+        </tr>
+        <tr id="1">
+            <td>Bruno</td>
+            <td>37</td>
+        </tr>
+        <tr id="2">
+            <td>Maria</td>
+            <td>38</td>
+        </tr>
+        <tr id="3">
+            <td>João</td>
+            <td>40</td>
+        </tr>
+        <tr id="4">
+            <td>Valter</td>
+            <td>35</td>
+        </tr>
+        <tr id="5">
+            <td>Manoela</td>
+            <td>18</td>
+        </tr>
+        <tr id="6">
+            <td>Michele</td>
+            <td>26</td>
+        </tr>
+    </table>
+</body>
+</html>
+<!-- A tag th é um cabeçalho -->
+<!-- A tag tr é uma linha -->
+<!-- A tag td é uma coluna -->

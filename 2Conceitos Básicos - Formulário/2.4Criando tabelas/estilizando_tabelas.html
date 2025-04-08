@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com tabelas</title>
+    <style>
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot td{
+            background-color: lightgray;
+        }
+
+        table tbody tr:nth-child(even) td{
+            background-color: #f1f1f1;
+        }
+
+        table tbody tr:hover td{
+            background-color: #E9E9E9;
+            cursor: pointer;
+        }
+        
+    </style>
+</head> 
+<body>
+    <table width="250" align="center" cellspacing="0" cellpadding="5">
+        <!-- A tag caption é a descrição da tabela, não é obrigado a utilizar e pode ser substituído pela tag summary-->
+        <caption>Tabela de Idades dos Alunos - DIO</caption>
+        <!-- A tag thead é para cabeçalho -->
+        <thead>
+            <tr>
+                <!-- Com o atributo collspan 2 você consegue mesclar as células -->
+                <th colspan="2">Minha Tabela</th>
+            </tr>
+            <tr>
+                <th title="Nome Completo">Nome</th>
+                <th>Idade</th>
+            </tr>
+        </thead>
+        <!-- A tag tbody é o corpo da tabela (Foi usado para agrupar todos os dados.) -->
+        <tbody>
+            <tr id="1">
+                <td>Bruno</td>
+                <td>37</td>
+            </tr>
+            <tr id="2">
+                <td>Maria</td>
+                <td>38</td>
+            </tr>
+            <tr id="3">
+                <td>João</td>
+                <td>40</td>
+            </tr>
+            <tr id="4">
+                <td>Valter</td>
+                <td>35</td>
+            </tr>
+            <tr id="5">
+                <td>Manoela</td>
+                <td>18</td>
+            </tr>
+            <tr id="6">
+                <td>Michele</td>
+                <td>26</td>
+            </tr>
+    </tbody>
+    <!-- A tag tfoot é usada para rodapé da tebela -->
+     <tfoot>
+        <tr>
+            <td>Total</td>
+            <td>6</td>
+        </tr>
+     </tfoot>
+    </table>
+</body>
+</html>
