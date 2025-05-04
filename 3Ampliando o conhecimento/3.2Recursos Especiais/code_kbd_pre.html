@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos especiais</title>
+    <style>
+        kbd{
+            border: solid 1px black;
+        }
+        pre{
+            background-color: #f1f1f1;
+        }
+        pre > p{
+            font-family: 'Times New Roman', Times, serif;
+        }
+        code{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- O KBD é para transformar uma fonte para o tipo monoespaçada, serve para criar inputs de teclado -->
+    <p>Para copiar essa informação, pressione <kbd>CTRL</kbd> + <kbd>C</kbd></p>
+
+    <!-- Como se trata de um comando e não de um input de teclado pode usar a tag code -->
+    <p>Para trocar o fundo de um elemento utilize o comando <code>background-color</code></p>
+
+    <!-- O pre em conjunto com o code deixa tudo monoespace -->
+    <p>Comando completo, alterar cor de fundo</p>
+    <pre>
+        <p>Neste momento você aplica dessa forma.</p>
+        <code>
+        code{
+            background-color: #f1f1f1;
+            color: red;
+        }
+        </code>
+    </pre>
+</body>
+</html>
+<!-- As fontes monoespace são aquelas que ocupam o mesmo espaço de tamanho -->

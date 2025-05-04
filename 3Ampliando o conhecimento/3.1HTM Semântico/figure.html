@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imangens</title>
+</head>
+<body>
+    <!-- É um container (div) que vamos usar para colocar itens dentro dela. Ela delimita o corpo de uma imagem. -->
+    <figure>
+        <img src="/images/boneca.webp" width="250" alt="Boneca">
+
+        <!-- É uma auxiliar da tag figure -->
+         <figcaption>Descrição do veículo</figcaption>
+    </figure>
+
+    <picture>
+        <!-- No picture é possível colocar multiplas fontes para uma mesma imagem -->
+         <source srcset="/images/boneca.webp" media="(min-width: 600px)">
+        <img src="/images/boneca.webp" alt="">
+    </picture>
+</body>
+</html>
